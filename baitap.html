@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check email</title>
+</head>
+<body>
+<script>
+    let regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+\.[A-Za-z0-9]+$/;
+    function is_ValidateEmail(str){
+        if(regexp.test(str)){
+            return alert("Ok!");
+        }else {
+            return alert("False!");
+        }
+    }
+    let email = prompt();
+    is_ValidateEmail(email);
+</script>
+</body>
+</html>
